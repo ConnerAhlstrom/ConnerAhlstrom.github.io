@@ -2146,7 +2146,7 @@ button,
         top: 0; 
         } }
     /* Media Query for Smaller Screens */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1030px) {
   #header {
       flex-direction: column; /* Stack items vertically */
       align-items: flex-start; /* Align items to the left */
@@ -2199,6 +2199,24 @@ button,
       -ms-object-position: center;
       object-position: center;
       width: 100%; }
+    #banner .main img {
+      max-width: 100%;
+      height: auto;
+      transform: translate(0, -27px);
+    }
+    @media screen and (max-width: 600px) {
+      #banner .main img {
+        transform: none;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      #banner .main img {
+        display: none; /* Hide the image */
+      }
+    }
+    
   @media screen and (orientation: portrait) {
     #banner {
       -moz-flex-direction: column-reverse;
